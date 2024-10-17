@@ -8,7 +8,7 @@ import edu.campusnum.visualsort.model.ObservableArray;
  * Date: 27/07/2023
  * Time: 14:55
  */
-public class InsertionSort  implements SortAlgorithm{
+public class InsertionSort implements SortAlgorithm {
     @Override
     public void sort(ObservableArray array) {
 
@@ -16,16 +16,15 @@ public class InsertionSort  implements SortAlgorithm{
 
         for (int i = 1; i < n; i++) {
             int temp = array.get(i);
-            int j = i ;
+            int j = i;
 
-            while (j > 0 && array.get(j -1) > temp) {
+            while (j > 0 && array.get(j - 1) > temp) {
 
                 array.swap(j, j - 1);
                 j = j - 1;
 
 
             }
-
 
 
         }
